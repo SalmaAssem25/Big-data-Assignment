@@ -56,4 +56,4 @@ plt.savefig("summary_plot.png")
 print("Visualizations saved")
 
 
-os.system(f"python cluster.py {file_path}")
+os.system("python cluster.py data_preprocessed.csv")
