@@ -40,4 +40,4 @@ df["PC1_bin"] = pd.cut(df["PC1"], bins=3, labels=["Low", "Medium", "High"])
 
 output_path = "data_preprocessed.csv"
 df.to_csv(output_path, index=False)
-os.system(f"py analytics.py {output_path}")
+os.system(f"python analytics.py {output_path}")

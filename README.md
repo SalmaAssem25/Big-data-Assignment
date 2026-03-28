@@ -39,21 +39,18 @@ ingest.py → preprocess.py → analytics.py → visualize.py → cluster.py
 
 \---
 
+\##Docker Commands
+build docker image:
+    docker build -t customer-analytics
 
+run container 
+    docker run -it customer-analytics
 
-\## How to Run (Locally)
+\## How to Run 
 
+python ingest.py bank.csv
 
-
-1\. Run preprocessing:
-
-python preprocess.py bank.csv
-
-
-
-2\. Run clustering:
-
-python cluster.py
+(The rest of the scripts run automatically as part of the pipeline)
 
 
 
@@ -63,13 +60,13 @@ python cluster.py
 
 \## Output Files
 
+\- data_raw.csv -> raw dataset copy 
 
+\- data_preprocessed.csv -> cleaned dataset  
 
-\- data\_preprocessed.csv → cleaned dataset  
-
-\- data\_clustered.csv → dataset with clusters  
-
-\- clusters.txt → number of samples per cluster  
+\- insight1.txt, insight2.txt, insight3.txt -> generated insights
+\- summary_plot.png -> visualization plots
+\- clusters.txt -> number of samples per cluster
 
 
 
@@ -86,6 +83,8 @@ The summary.sh script collects all output files into a results folder.
 
 
 \---
+
+
 
 
 

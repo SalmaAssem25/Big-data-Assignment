@@ -11,4 +11,4 @@ df.to_csv(output_path, index=False)
 
 print("Data saved as data_raw.csv")
 
-os.system(f"py preprocess.py {output_path}")
+os.system(f"python preprocess.py {output_path}")

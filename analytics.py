@@ -20,4 +20,4 @@ with open("insight3.txt", "w") as f:
 print("Insights generated successfully")
 
 
-os.system(f"py visualize.py {file_path}")
+os.system(f"python visualize.py {file_path}")
