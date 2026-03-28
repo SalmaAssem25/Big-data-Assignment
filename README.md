@@ -65,6 +65,9 @@ python ingest.py bank.csv
 \- data_preprocessed.csv -> cleaned dataset  
 
 \- insight1.txt, insight2.txt, insight3.txt -> generated insights
+\-histogram.png -> distribution of selected feature
+\-heatmap.png -> correlation between features
+\-scatter.png -> relationship between variables
 \- summary_plot.png -> visualization plots
 \- clusters.txt -> number of samples per cluster
 
